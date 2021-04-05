@@ -4,8 +4,11 @@
     "module": "esnext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "lib": ["DOM", "ES2020"],
-    "jsx": "react",
+    "lib": [
+      "DOM",
+      "ES2020"
+    ],
+    "jsx": "react-jsx",
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -23,5 +26,7 @@
       "module": "CommonJS"
     }
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
