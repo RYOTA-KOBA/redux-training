@@ -1,4 +1,5 @@
 export type U = {
+  isSignedIn: boolean;
   uid: string;
   username: string;
 };

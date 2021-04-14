@@ -7,6 +7,7 @@ import {
 import { UsersReducer } from '../users/reducers';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
 import { History } from 'history';
+import thunk from 'redux-thunk';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const createStore = (history: History<unknown>) => {
@@ -16,7 +17,7 @@ const createStore = (history: History<unknown>) => {
       //   products: ProductsReducer,
       users: UsersReducer,
     }),
-    applyMiddleware(routerMiddleware(history))
+    applyMiddleware(routerMiddleware(history), thunk)
   );
 };
 export default createStore;
